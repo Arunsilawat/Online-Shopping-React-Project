@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Loader from "./Loader";
+import LoaderComp from "./Loader";
 
 const PaymentComplete=()=>{
     const [isLoading, setIsLoading] = useState(true);
@@ -11,7 +11,7 @@ const PaymentComplete=()=>{
         <>
         {isLoading? (
              <div style={{width:"100px", margin:"auto"}}>
-             <Loader/>
+             <LoaderComp/>
           </div>
         ) : (
             <h3 align="center"> Your Payment Succesfully Completed!!!</h3>

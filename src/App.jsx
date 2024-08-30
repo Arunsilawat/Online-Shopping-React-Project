@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import Home from "./Pages/Home";
 import CartProduct from "./Pages/CartProduct";
 import CheckOut from "./Pages/CheckOut";
+import PaymentComplete from "./Pages/PaymentComplete";
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
                <Route path="/home" element={<Home/>}/>
                <Route path="/cartproduct" element={<CartProduct/>}/>
                <Route path="/checkout" element={<CheckOut/>}/>
+               <Route path="/paymentcom" element={<PaymentComplete/>}/>
                </Route>
             </Routes>
          </BrowserRouter>

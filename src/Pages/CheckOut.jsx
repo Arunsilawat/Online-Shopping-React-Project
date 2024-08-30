@@ -13,7 +13,7 @@ const CheckOut=()=>{
     }  
     )
     const payComplete=()=>{
-        navigate("/paycomp")
+        navigate("/paymentcom")
     }
 
 
