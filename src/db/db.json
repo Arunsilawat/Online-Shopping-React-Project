@@ -1,36 +1,263 @@
 {
-  "ragesrer": [
+  "product":[
     {
-      "id": "3",
-      "userid": 121,
-      "name": "Arun",
-      "email": "arunsilawat@gmail.com",
-      "pass": "s123",
-      "repass": "s123"
-    },
-    {
-      "id": "4",
-      "userid": "111",
-      "name": "Ritu",
-      "email": "ritu123@gmail.com",
-      "pass": "r123",
-      "repass": "r123"
-    },
-    {
-      "id": "5",
-      "userid": 121,
-      "name": "Arun",
-      "email": "arunsilawat@gmail.com",
-      "pass": "s123",
-      "repass": "s123"
-    },
-    {
-      "id": "6",
-      "userid": "111",
-      "name": "Ritu",
-      "email": "ritu123@gmail.com",
-      "pass": "r123",
-      "repass": "r123"
-    }
-  ]
+        "id":1,
+        "name":"biba top",
+        "description":"Geometric Embroidered Work A-Line Kurti",
+        "price":1200,
+        "category":"women",
+        "images":"w1.webp"
+      },
+      {
+        "id":2,
+        "name":"biba",
+        "description":"Beige & Pink Floral Printed Shirt Collar Pleated Kurti",
+        "price":600,
+        "category":"women",
+        "images":"w2.webp"
+      },
+      {
+        "id":3,
+        "name":"upper",
+        "description":"Women Mandarin Collar Yoke Design Kurti",
+        "price":400,
+        "category":"women",
+        "images":"w3.avif"
+      },
+      {
+        "id":4,
+        "name":"upper",
+        "description":"Women Red Solid Straight Kurti",
+        "price":700,
+        "category":"women",
+        "images":"w4.jpeg"
+      },
+      {
+        "id":5,
+        "name":"denim jacket",
+        "description":"Beige Embroidered Detail denim jacket",
+        "price":800,
+        "category":"women",
+        "images":"w5.jpeg"
+      },
+      {
+        "id":6,
+        "name":"kurti",
+        "description":"Women Mandarin Collar Yoke Design Kurti",
+        "price":300,
+        "category":"women",
+        "images":"w6.webp"
+      },
+      {
+        "id":7,
+        "name":"black top",
+        "description":"This is Good top Women Mandarin",
+        "price":300,
+        "category":"women",
+        "images":"w7.webp"
+      },
+      {
+        "id":8,
+        "name":"biba top",
+        "description":"Beige & Pink Floral Printed Shirt Collar Pleated Kurti",
+        "price":700,
+        "category":"women",
+        "images":"w8.webp"
+      },
+      {
+        "id":9,
+        "name":"biba top",
+        "description":"Women Solid Straight Kurti Women Mandarin",
+        "price":180,
+        "category":"women",
+        "images":"w9.webp"
+      },
+      {
+        "id":10,
+        "name":"uper",
+        "description":"Women  Solid Straight upper Women Mandarin",
+        "price":150,
+        "category":"women",
+        "images":"w10.webp"
+      },
+      
+  
+      {
+        "id":11,
+        "name":"huddy",
+        "description":"Men Olive Green & Black Slim Fit Checked Casual Shirt",
+        "price":700,
+        "category":"men",
+        "images":"m1.webp"
+      },
+      {
+        "id":12,
+        "name":"over size shirt",
+        "description":"Men Tweeder Tailored Fit Spread Collar Jacket",
+        "price":700,
+        "category":"men",
+        "images":"m2.jpeg"
+      },
+      {
+        "id":13,
+        "name":"white t-shirt",
+        "description":"Women Mandarin Collar Yoke Design T-shirt",
+        "price":300,
+        "category":"men",
+        "images":"m3.jpeg"
+      },
+      {
+        "id":14,
+        "name":"formal",
+        "description":"Striped Double-Breasted Tailored-Fit Two-Piece Suit",
+        "price":1700,
+        "category":"men",
+        "images":"w4.jpeg"
+      },
+      {
+        "id":15,
+        "name":"over shirt",
+        "description":"Beige Embroidered Detail shirt Double-Breasted",
+        "price":800,
+        "category":"men",
+        "images":"m5.webp"
+      },
+      {
+        "id":16,
+        "name":"Jacket",
+        "description":"Longline Bandhgala Suit with Nehru Jacket",
+        "price":1300,
+        "category":"men",
+        "images":"m6.jpeg"
+      },
+      {
+        "id":17,
+        "name":"T-shirt",
+        "description":"This is Good one",
+        "price":300,
+        "category":"men",
+        "images":"m7.webp"
+      },
+      {
+        "id":18,
+        "name":"full sleeps",
+        "description":"Beige & Floral Printed T-Shirt ",
+        "price":500,
+        "category":"men",
+        "images":"m8.webp"
+      },
+      {
+        "id":19,
+        "name":"huddy",
+        "description":"men Solid Straight huddy",
+        "price":980,
+        "category":"men",
+        "images":"m9.jpeg"
+      },
+      {
+        "id":20,
+        "name":"over size shirt",
+        "description":"men  Solid Straight upper",
+        "price":1150,
+        "category":"men",
+        "images":"m10.jpeg"
+      },
+  
+      {
+        "id":21,
+        "name":"t-shirt",
+        "description":"Girls and boys Fleece Jackets olid Straight ",
+        "price":300,
+        "category":"kid",
+        "images":"k1.webp"
+      },
+      {
+        "id":22,
+        "name":"over size shirt",
+        "description":"Men Tweeder Tailored Fit Spread Collar Jacket",
+        "price":700,
+        "category":"kid",
+        "images":"k2.webp"
+      },
+      {
+        "id":23,
+        "name":"girls and boys top",
+        "description":"leys garments kids clothing set, boys top & bottom set",
+        "price":400,
+        "category":"kid",
+        "images":"k3.webp"
+      },
+      {
+        "id":24,
+        "name":"orange t-shirt",
+        "description":"SRP TRENDY LEGEND BOYS/GIRLS TOP BOTTOM SET",
+        "price":150,
+        "category":"kid",
+        "images":"k4.webp"
+      },
+      {
+        "id":25,
+        "name":"kurta",
+        "description":"Beige Embroidered Detail shirt",
+        "price":800,
+        "category":"kid",
+        "images":"k5.webp"
+      },
+      {
+        "id":26,
+        "name":"frok",
+        "description":"Three-Piece Bandhgala  girls",
+        "price":300,
+        "category":"kid",
+        "images":"k6.webp"
+      },
+      {
+        "id":27,
+        "name":"denim set",
+        "description":"KIDS CLOTHING SET",
+        "price":800,
+        "category":"kid",
+        "images":"k7.webp"
+      },
+      {
+        "id":28,
+        "name":"kids set",
+        "description":"KIDS CLOTHING SET",
+        "price":500,
+        "category":"kid",
+        "images":"k8.webp"
+      },
+      {
+        "id":29,
+        "name":"mini frok",
+        "description":"kid Solid Straight huddy Printed Printed",
+        "price":380,
+        "category":"kid",
+        "images":"k9.webp"
+      },
+      {
+        "id":30,
+        "name":"white set",
+        "description":"Mist n Fogg Kid's  Maroon Clothing Sets",
+        "price":250,
+        "category":"kid",
+        "images":"k10.webp"
+      } ,
+      {
+        "id":31,
+        "name":" frok",
+        "description":"kid Solid Straight huddy Printed Printed",
+        "price":400,
+        "category":"kid",
+        "images":"k9.webp"
+      },
+      {
+        "id":32,
+        "name":"denim set",
+        "description":"Mist n Fogg Kid's  Maroon Clothing Sets",
+        "price":350,
+        "category":"kid",
+        "images":"k10.webp"
+      } 
+    ]
 }
