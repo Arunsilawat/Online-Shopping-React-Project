@@ -63,3 +63,10 @@
     margin: auto;
     width: 90%;
 }
+#chekout
+{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
