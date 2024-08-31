@@ -31,19 +31,11 @@ const Top = () => {
                             <Nav.Link href="home" style={{fontWeight:"bold"}}>Home</Nav.Link>
                             <Nav.Link href="searchpro" style={{fontWeight:"bold"}}>Search Product</Nav.Link>
                             <Nav.Link href="cartproduct" style={{fontWeight:"bold"}}>My Cart</Nav.Link>
-                            <NavDropdown title="Link" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">
-                                    Another action
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5">
-                                    Something else here
-                                </NavDropdown.Item>
+                            <NavDropdown title="Categories" id="navbarScrollingDropdown" style={{fontWeight:"bold"}}>
+                                <NavDropdown.Item href="men's">Men's Category</NavDropdown.Item>
+                                <NavDropdown.Item href="#action3">Women's Category</NavDropdown.Item>
+                                <NavDropdown.Item href="#action3">Kid's Category</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#" disabled>
-                                Link
-                            </Nav.Link>
                         </Nav>
                         <Form className="d-flex" >
                             <Form.Control

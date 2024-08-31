@@ -6,6 +6,7 @@ import CheckOut from "./Pages/CheckOut";
 import PaymentComplete from "./Pages/PaymentComplete";
 import SearchProduct from "./Pages/SearchProduct";
 import ProductDisplay from "./Pages/ProductDisplay";
+import Men from "./Pages/Men";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
                <Route path="/paymentcom" element={<PaymentComplete/>}/>
                <Route path="/searchpro" element={<SearchProduct/>}/>
                <Route path="/prodisplay" element={<ProductDisplay/>}/>
+               <Route path="/men's" element={<Men/>}/>
                </Route>
             </Routes>
          </BrowserRouter>
