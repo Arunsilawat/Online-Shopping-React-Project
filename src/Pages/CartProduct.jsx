@@ -12,6 +12,7 @@ const CartProduct = () => {
     const mydata = useSelector((state) => state.mycart.cart);
     const Dispatch = useDispatch();
     const navigate= useNavigate();
+    const Navigate= useNavigate();
 
     const cartdel = (id) => {
         Dispatch(delcart(id))
@@ -27,13 +28,17 @@ const CartProduct = () => {
         navigate("/checkout");
       
       }
+    const dataSendCart=(key)=>
+        {
+           Navigate("/prodisplay", { state: key });  
+        }
     let totalAmount = 0;
     const ans = mydata.map((key) => {
         totalAmount+=key.price*key.qnty;
         return (
             <>
                 <tr>
-                    <td> <img src={"src/images/" + key.images} idth="100" height="80" /></td>
+                    <td> <img src={"src/images/" + key.images} idth="100" height="80" onClick={()=>{dataSendCart(key)}}/></td>
                     <th>{key.name}</th>
                     <td>{key.description}</td>
                     <td>{key.price}</td>

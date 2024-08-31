@@ -30,6 +30,7 @@ const Top = () => {
                         >
                             <Nav.Link href="home" style={{fontWeight:"bold"}}>Home</Nav.Link>
                             <Nav.Link href="searchpro" style={{fontWeight:"bold"}}>Search Product</Nav.Link>
+                            <Nav.Link href="cartproduct" style={{fontWeight:"bold"}}>My Cart</Nav.Link>
                             <NavDropdown title="Link" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">
