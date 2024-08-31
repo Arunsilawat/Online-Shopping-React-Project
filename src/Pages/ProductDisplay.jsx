@@ -37,7 +37,7 @@ const ProductDisplay = () => {
     <>
     <br />
       <center><h1>Our Product</h1></center>
-      <br />
+      
       <div id="productData">
         <div>
           <img src={`src/images/${myPro.images}`} style={{ height: "70%", width: "80%" ,marginLeft:"70px"}} />
