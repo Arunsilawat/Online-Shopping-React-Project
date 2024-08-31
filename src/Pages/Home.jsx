@@ -20,9 +20,13 @@ import { IoTimerOutline } from "react-icons/io5";
 
 import { addcart } from './cartSlice';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+
 
 const Home = () => {
     const Dispatch = useDispatch();
+    const navigate= useNavigate();
+
     const [mydata, setMydata] = useState([]);
     const loadData = () => {
         let api = "http://localhost:3000/product";
@@ -36,13 +40,17 @@ const Home = () => {
     const addData = (eid, nm, dis, price, img) => {
         Dispatch(addcart({ id: eid, name: nm, images: img, description: dis, price: price,qnty:1 }))
     }
+    const dataSendCart=(key)=>
+        {
+           navigate("/prodisplay", { state: key });  
+        }
     const ans = mydata.map((key) => {
         return (
             <>
                 <Card style={{ width: "250px", marginLeft: "10px", marginRight: "10px", marginBottom: "20px" }}>
-                    <Card.Img variant="top" src={"src/images/" + key.images} style={{ height: "250px" }} />
+                    <Card.Img variant="top" src={"src/images/" + key.images} style={{ height: "250px" }} onClick={()=>{dataSendCart(key)}}/>
                     <Card.Body>
-                        <Card.Title style={{ color: "blue", fontSize: "14px" }}></Card.Title>
+                        <Card.Title style={{ color: "blue", fontSize: "14px" }} onClick={()=>{dataSendCart(key)}}>Name : {key.name}</Card.Title>
                         <Card.Text>
                             {key.description}
                             <h5 style={{ color: "red" }}> Price : {key.price} </h5>
