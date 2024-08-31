@@ -33,7 +33,7 @@ const Top = () => {
                             <Nav.Link href="cartproduct" style={{fontWeight:"bold"}}>My Cart</Nav.Link>
                             <NavDropdown title="Categories" id="navbarScrollingDropdown" style={{fontWeight:"bold"}}>
                                 <NavDropdown.Item href="men's">Men's Category</NavDropdown.Item>
-                                <NavDropdown.Item href="#action3">Women's Category</NavDropdown.Item>
+                                <NavDropdown.Item href="women's">Women's Category</NavDropdown.Item>
                                 <NavDropdown.Item href="#action3">Kid's Category</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>

@@ -7,6 +7,7 @@ import PaymentComplete from "./Pages/PaymentComplete";
 import SearchProduct from "./Pages/SearchProduct";
 import ProductDisplay from "./Pages/ProductDisplay";
 import Men from "./Pages/Men";
+import Women from "./Pages/Women";
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                <Route path="/searchpro" element={<SearchProduct/>}/>
                <Route path="/prodisplay" element={<ProductDisplay/>}/>
                <Route path="/men's" element={<Men/>}/>
+               <Route path="/women's" element={<Women/>}/>
                </Route>
             </Routes>
          </BrowserRouter>
