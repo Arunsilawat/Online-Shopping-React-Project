@@ -29,12 +29,12 @@ const Top = () => {
                             navbarScroll
                         >
                             <Nav.Link href="home" style={{fontWeight:"bold"}}>Home</Nav.Link>
-                            <Nav.Link href="searchpro" style={{fontWeight:"bold"}}>Search Product</Nav.Link>
+                            <Nav.Link href="searchpro" style={{fontWeight:"bold"}}>Search</Nav.Link>
                             <Nav.Link href="cartproduct" style={{fontWeight:"bold"}}>My Cart</Nav.Link>
                             <NavDropdown title="Categories" id="navbarScrollingDropdown" style={{fontWeight:"bold"}}>
                                 <NavDropdown.Item href="men's">Men's Category</NavDropdown.Item>
                                 <NavDropdown.Item href="women's">Women's Category</NavDropdown.Item>
-                                <NavDropdown.Item href="#action3">Kid's Category</NavDropdown.Item>
+                                <NavDropdown.Item href="kid's">Kid's Category</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         <Form className="d-flex" >
@@ -47,7 +47,7 @@ const Top = () => {
                             />
                             
                         </Form>
-                        <GrCart style={{fontWeight:"bold",fontSize:"28px",margin:"8px"}} onClick={()=>{navigate("/cartproduct")}}/>
+                        <GrCart style={{fontWeight:"bold",fontSize:"28px"}} onClick={()=>{navigate("/cartproduct")}}/>
                         {datalength>=1? <span id="tokri"> {datalength} </span>: ""}
                         <FaRegHeart style={{fontWeight:"bold",fontSize:"28px",margin:"8px"}}/>
                         <CgProfile style={{fontWeight:"bold",fontSize:"28px",margin:"8px"}}/>
