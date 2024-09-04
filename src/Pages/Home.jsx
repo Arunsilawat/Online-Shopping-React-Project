@@ -68,30 +68,35 @@ const Home = () => {
             </marquee>
             <Carousel>
                 <Carousel.Item>
-                    <img src={h1} alt="" style={{ width: "100%", height: "550px" }} />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
+                    <img src="https://cmsimages.shoppersstop.com/main_strapi_web_fa797dee45/main_strapi_web_fa797dee45.png" alt=""   style={{ width: "100%" }}/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={h2} alt="" style={{ width: "100%", height: "550px" }} />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
+                    <img src=" https://cmsimages.shoppersstop.com/women_strapi_web_3203c7dd32/women_strapi_web_3203c7dd32.png" alt="" style={{ width: "100%" }} />
+                     
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={h3} alt="" style={{ width: "100%", height: "550px" }} />
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                    </Carousel.Caption>
+                    <img src="https://cmsimages.shoppersstop.com/men_strapi_web_b72b1cead7/men_strapi_web_b72b1cead7.png" alt="" style={{ width: "100%" }} />
+                  
                 </Carousel.Item>
             </Carousel><br /><br />
     {/* -------------------------------------------corojal---------------------------------------------------- */}
+    <Card className="bg-dark text-white">
+      <Card.Img src="https://beyoung.in/api/catalog/new-bb/mobile/banner/Home-page-banner-desktop-view11.jpg" alt="Card image" style={{width:'100%',height:'300px'}}/>
+      <Card.ImgOverlay>
+        <Card.Title>Card title</Card.Title>
+        <Card.Text>
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </Card.Text>
+        <Card.Text>Last updated 3 mins ago</Card.Text>
+      </Card.ImgOverlay>
+    </Card>
+    {/* ----------------------------------------Carts---------------------------------------------------------- */}
+    <h1 align="center"> Our Top Brands</h1><br /><br />
+            <div id="cartdata">
+                {ans}
+            </div><br /><br />
+    {/* -------------------------------------------------------------------------------------------------------- */}
             <Container>
                 <Row>
                     <Col>
@@ -179,10 +184,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container><br /><br />
-            <h1 align="center"> Our Top Brands</h1><br /><br />
-            <div id="cartdata">
-                {ans}
-            </div><br /><br />
+           
 
             {/* <video width="100%" height="500px" controls autoplay muted >
                 <source src={vid} type="video/mp4" />
