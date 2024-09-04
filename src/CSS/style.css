@@ -75,4 +75,9 @@
     justify-content:space-evenly;
     padding: 3%;
 }
- 
+#explor{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;    
+    /* margin: 90px; */
+}

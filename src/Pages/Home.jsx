@@ -80,9 +80,9 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel><br /><br />
             {/* -------------------------------------------corojal---------------------------------------------------- */}
-         
-       
-{/* 
+
+
+            {/* 
             <video width="50%" controls autoplay muted >
                 <source src="https://media.gettyimages.com/id/1306232227/video/women-shopping-at-clothes-store.mp4?s=mp4-640x640-gi&k=20&c=PxFhrvPjJvObqrSbd6P5HgEoatlEIyedde2BjMc_3DY=" type="video/mp4" />
             </video> */}
@@ -95,6 +95,20 @@ const Home = () => {
             <div id="cartdata">
                 {ans}
             </div><br /><br />
+            <section id='explor'>
+                <div>
+                    <img style={{ width: '100%', padding: '5%' }} src="https://images.unsplash.com/photo-1483985988355-763728e1935b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2lybHMlMjBzaG9wcGluZ3xlbnwwfHwwfHx8MA%3D%3D" />
+                </div>
+                <div>
+                    <div style={{ fontSize: '250%', fontWeight: 'bold', padding: '5%' }}>Explore Our Products</div><br />
+                    <div style={{ fontSize: '120%', fontWeight: 'bold', fontFamily: 'cursive', padding: '5%' }}>You are not allowed to redistribute this template ZIP file <br /> on any other website.</div>
+                    <div style={{padding:'5%'}} >There are 5 pages included in this HexaShop Template   <br />There are web development costs for us.
+                        <div>Explore Our Products</div>
+                        <br />
+                        <Button >Discover More</Button>
+                    </div><br />
+                </div>
+            </section><br />
             {/* -------------------------------------------------------------------------------------------------------- */}
             <Container>
                 <Row>
