@@ -16,6 +16,8 @@ import { MdPayment } from "react-icons/md";
 import { LuShoppingBag } from "react-icons/lu";
 import { GrDeliver } from "react-icons/gr";
 import { IoTimerOutline } from "react-icons/io5";
+import { GrInstagram } from "react-icons/gr";
+
 
 
 import { addcart } from './cartSlice';
@@ -26,9 +28,23 @@ import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
+import {
+    MDBBtn,
+    MDBModal,
+    MDBModalDialog,
+    MDBModalContent,
+    MDBModalHeader,
+    MDBModalTitle,
+    MDBModalBody,
+    MDBModalFooter,
+} from 'mdb-react-ui-kit';
+
 const Home = () => {
     const Dispatch = useDispatch();
     const navigate = useNavigate();
+
+    const [basicModal, setBasicModal] = useState(false);
+    const toggleOpen = () => setBasicModal(!basicModal);
 
     const [mydata, setMydata] = useState([]);
     const loadData = () => {
@@ -199,16 +215,35 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container><br /><br />
+            {/* --------------------------------------------------------------------------------------------------------- */}
+            <MDBBtn onClick={toggleOpen}>LAUNCH DEMO MODAL</MDBBtn>
+            <MDBModal open={basicModal} onClose={() => setBasicModal(false)} tabIndex='-1'>
+                <MDBModalDialog>
+                    <MDBModalContent>
+                        <MDBModalHeader>
+                            <MDBModalTitle>Modal title</MDBModalTitle>
+                            <MDBBtn className='btn-close' color='none' onClick={toggleOpen}></MDBBtn>
+                        </MDBModalHeader>
+                        <MDBModalBody>Modal body text goes here.</MDBModalBody>
 
+                        <MDBModalFooter>
+                            <MDBBtn color='secondary' onClick={toggleOpen}>
+                                Close
+                            </MDBBtn>
+                            <MDBBtn>Save changes</MDBBtn>
+                        </MDBModalFooter>
+                    </MDBModalContent>
+                </MDBModalDialog>
+            </MDBModal>
             {/* -------------------------------------footer----------------------------------------------------------- */}
-            <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-                <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+            <MDBFooter bgColor='secondary' className='text-center text-lg-start text-muted' >
+                <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom' id='footerclr'>
                     <div className='me-5 d-none d-lg-block'>
                         <span>Get connected with us on social networks:</span>
                     </div>
 
-                    <div>
-                        <a href='' className='me-4 text-reset'>
+                    <div >
+                        <a href='' className='me-4 text-reset' >
                             <MDBIcon fab icon="facebook-f" />
                         </a>
                         <a href='' className='me-4 text-reset'>
@@ -229,7 +264,7 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section className=''>
+                <section  id='footerclr'>
                     <MDBContainer className='text-center text-md-start mt-5'>
                         <MDBRow className='mt-3'>
                             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
@@ -312,11 +347,14 @@ const Home = () => {
                     </MDBContainer>
                 </section>
 
-                <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+                <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' ,color:'white'}}>
                     © 2021 Copyright:
-                    <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+                    <a className='text-reset fw-bold' href='https://mdbootstrap.com/' >
                         MDBootstrap.com
-                    </a>
+                    </a><br />
+                   <a href="instagram.com">
+                   <GrInstagram />
+                   </a>
                 </div>
             </MDBFooter>
 
