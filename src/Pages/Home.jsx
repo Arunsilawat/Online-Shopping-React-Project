@@ -22,10 +22,11 @@ import { addcart } from './cartSlice';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
+import Ratio from 'react-bootstrap/Ratio';
 
 const Home = () => {
     const Dispatch = useDispatch();
-    const navigate= useNavigate();
+    const navigate = useNavigate();
 
     const [mydata, setMydata] = useState([]);
     const loadData = () => {
@@ -38,19 +39,18 @@ const Home = () => {
         loadData()
     })
     const addData = (eid, nm, dis, price, img) => {
-        Dispatch(addcart({ id: eid, name: nm, images: img, description: dis, price: price,qnty:1 }))
+        Dispatch(addcart({ id: eid, name: nm, images: img, description: dis, price: price, qnty: 1 }))
     }
-    const dataSendCart=(key)=>
-        {
-           navigate("/prodisplay", { state: key });  
-        }
+    const dataSendCart = (key) => {
+        navigate("/prodisplay", { state: key });
+    }
     const ans = mydata.map((key) => {
         return (
             <>
                 <Card style={{ width: "250px", marginLeft: "10px", marginRight: "10px", marginBottom: "20px" }}>
-                    <Card.Img variant="top" src={"src/images/" + key.images} style={{ height: "250px" }} onClick={()=>{dataSendCart(key)}}/>
+                    <Card.Img variant="top" src={"src/images/" + key.images} style={{ height: "250px" }} onClick={() => { dataSendCart(key) }} />
                     <Card.Body>
-                        <Card.Title style={{ color: "blue", fontSize: "14px" }} onClick={()=>{dataSendCart(key)}}>Name : {key.name}</Card.Title>
+                        <Card.Title style={{ color: "blue", fontSize: "14px" }} onClick={() => { dataSendCart(key) }}>Name : {key.name}</Card.Title>
                         <Card.Text>
                             {key.description}
                             <h5 style={{ color: "red" }}> Price : {key.price} </h5>
@@ -68,35 +68,34 @@ const Home = () => {
             </marquee>
             <Carousel>
                 <Carousel.Item>
-                    <img src="https://cmsimages.shoppersstop.com/main_strapi_web_fa797dee45/main_strapi_web_fa797dee45.png" alt=""   style={{ width: "100%" }}/>
+                    <img src="https://cmsimages.shoppersstop.com/main_strapi_web_fa797dee45/main_strapi_web_fa797dee45.png" alt="" style={{ width: "100%" }} />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img src=" https://cmsimages.shoppersstop.com/women_strapi_web_3203c7dd32/women_strapi_web_3203c7dd32.png" alt="" style={{ width: "100%" }} />
-                     
+
                 </Carousel.Item>
                 <Carousel.Item>
                     <img src="https://cmsimages.shoppersstop.com/men_strapi_web_b72b1cead7/men_strapi_web_b72b1cead7.png" alt="" style={{ width: "100%" }} />
-                  
+
                 </Carousel.Item>
             </Carousel><br /><br />
-    {/* -------------------------------------------corojal---------------------------------------------------- */}
-    <Card className="bg-dark text-white">
-      <Card.Img src="https://beyoung.in/api/catalog/new-bb/mobile/banner/Home-page-banner-desktop-view11.jpg" alt="Card image" style={{width:'100%',height:'300px'}}/>
-      <Card.ImgOverlay>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
-      </Card.ImgOverlay>
-    </Card>
-    {/* ----------------------------------------Carts---------------------------------------------------------- */}
-    <h1 align="center"> Our Top Brands</h1><br /><br />
+            {/* -------------------------------------------corojal---------------------------------------------------- */}
+         
+       
+{/* 
+            <video width="50%" controls autoplay muted >
+                <source src="https://media.gettyimages.com/id/1306232227/video/women-shopping-at-clothes-store.mp4?s=mp4-640x640-gi&k=20&c=PxFhrvPjJvObqrSbd6P5HgEoatlEIyedde2BjMc_3DY=" type="video/mp4" />
+            </video> */}
+
+            {/* ----------------------------------------Carts---------------------------------------------------------- */}
+            <h1 align="center"> Our Top Brands</h1><br />
+            <Card>
+                <Card.Img variant="top" src=" https://cmsimages.shoppersstop.com/onam_web_e3e495f279/onam_web_e3e495f279.png" />
+            </Card><br /><br />
             <div id="cartdata">
                 {ans}
             </div><br /><br />
-    {/* -------------------------------------------------------------------------------------------------------- */}
+            {/* -------------------------------------------------------------------------------------------------------- */}
             <Container>
                 <Row>
                     <Col>
@@ -184,11 +183,9 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container><br /><br />
-           
 
-            {/* <video width="100%" height="500px" controls autoplay muted >
-                <source src={vid} type="video/mp4" />
-            </video> */}
+
+
         </>
     )
 }
