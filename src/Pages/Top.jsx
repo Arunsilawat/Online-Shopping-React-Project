@@ -49,7 +49,7 @@ const Top = () => {
                         </Form>
                         <GrCart style={{fontWeight:"bold",fontSize:"28px"}} onClick={()=>{navigate("/cartproduct")}}/>
                         {datalength>=1? <span id="tokri"> {datalength} </span>: ""}
-                        <FaRegHeart style={{fontWeight:"bold",fontSize:"28px",margin:"8px"}}/>
+                        <FaRegHeart style={{fontWeight:"bold",fontSize:"28px",margin:"8px"}} onClick={()=>{navigate("/wishlist")}}/>
                         <CgProfile style={{fontWeight:"bold",fontSize:"28px",margin:"8px"}}/>
                     </Navbar.Collapse>
                 </Container>

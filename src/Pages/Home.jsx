@@ -17,6 +17,9 @@ import { LuShoppingBag } from "react-icons/lu";
 import { GrDeliver } from "react-icons/gr";
 import { IoTimerOutline } from "react-icons/io5";
 import { GrInstagram } from "react-icons/gr";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 
 
 
@@ -73,7 +76,8 @@ const Home = () => {
                             {key.description}
                             <h5 style={{ color: "red" }}> Price : {key.price} </h5>
                         </Card.Text>
-                        <Button variant="primary" onClick={() => { addData(key.id, key.name, key.description, key.price, key.images) }} >Add to Cart</Button>
+                        <Button variant="primary" onClick={() => { addData(key.id, key.name, key.description, key.price, key.images) }} style={{marginRight:'15px'}}>Add to Cart</Button>
+                        <span variant="primary" onClick={() => { addData(key.id, key.name, key.description, key.price, key.images) }} ><FaRegHeart style={{fontSize:'25px'}}/></span>
                     </Card.Body>
                 </Card>
             </>
@@ -350,10 +354,16 @@ const Home = () => {
                 <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' ,color:'white'}}>
                     © 2021 Copyright:
                     <a className='text-reset fw-bold' href='https://mdbootstrap.com/' >
-                        MDBootstrap.com
+                        www.onlineshopping.com
                     </a><br />
-                   <a href="https://www.instagram.com/">
+                   <a href="https://www.instagram.com/" style={{margin:'5px'}}>
                    <GrInstagram />
+                   </a>
+                   <a href="https://www.facebook.com/" style={{margin:'5px'}}>
+                   <FaFacebookSquare />
+                   </a>
+                   <a href="https://x.com/i/flow/login" style={{margin:'5px'}}>
+                   <FaTwitter />
                    </a>
                 </div>
             </MDBFooter>

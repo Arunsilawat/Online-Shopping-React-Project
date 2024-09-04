@@ -9,6 +9,7 @@ import ProductDisplay from "./Pages/ProductDisplay";
 import Men from "./Pages/Men";
 import Women from "./Pages/Women";
 import Kids from "./Pages/Kids";
+import WishList from "./Pages/WishList";
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
                <Route path="/men's" element={<Men/>}/>
                <Route path="/women's" element={<Women/>}/>
                <Route path="/kid's" element={<Kids/>}/>
+               <Route path="wishlist" element={<WishList/>}/>
                </Route>
             </Routes>
          </BrowserRouter>
