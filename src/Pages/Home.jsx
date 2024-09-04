@@ -352,7 +352,7 @@ const Home = () => {
                     <a className='text-reset fw-bold' href='https://mdbootstrap.com/' >
                         MDBootstrap.com
                     </a><br />
-                   <a href="instagram.com">
+                   <a href="https://www.instagram.com/">
                    <GrInstagram />
                    </a>
                 </div>
