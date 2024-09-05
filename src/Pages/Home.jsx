@@ -20,6 +20,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa6";
 
 
 
@@ -78,6 +79,7 @@ const Home = () => {
                         </Card.Text>
                         <Button variant="primary" onClick={() => { addData(key.id, key.name, key.description, key.price, key.images) }} style={{marginRight:'15px'}}>Add to Cart</Button>
                         <span variant="primary" onClick={() => { addData(key.id, key.name, key.description, key.price, key.images) }} ><FaRegHeart style={{fontSize:'25px'}}/></span>
+                        <span variant="primary" onClick={() => { addData(key.id, key.name, key.description, key.price, key.images) }} ><FaHeart style={{fontSize:'25px',color:'red'}}/></span>
                     </Card.Body>
                 </Card>
             </>
